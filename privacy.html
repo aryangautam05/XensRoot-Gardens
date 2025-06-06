@@ -8,11 +8,13 @@
   :root {
     --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    --color-text-primary: #111827; /* Very dark gray */
-    --color-text-secondary: #6b7280; /* Neutral gray */
+    /* Blue green theme colors for privacy.html to match terms.html */
+    --color-text-primary: #0b4a49; /* Dark teal blue-green */
+    --color-text-secondary: #4a6e6d; /* muted teal */
     --color-bg: #ffffff;
+    --color-accent: #317773; /* medium teal */
     --border-radius: 0.75rem;
-    --shadow-light: 0 4px 8px rgb(0 0 0 / 0.05);
+    --shadow-light: 0 4px 8px rgba(49, 119, 115, 0.1);
     --max-width: 1200px;
     --spacing-section-vertical: 4rem;
     --spacing-section-horizontal: 1.5rem;
@@ -61,13 +63,13 @@
     padding-left: 1.75rem;
   }
   a {
-    color: #2563eb;
+    color: var(--color-accent);
     text-decoration: none;
     transition: color var(--transition-speed);
   }
   a:hover,
   a:focus {
-    color: #1e40af;
+    color: #1f5f59;
     outline: none;
   }
 
@@ -84,7 +86,7 @@
     top: 0;
     background-color: var(--color-bg);
     z-index: 1000;
-    box-shadow: 0 2px 6px rgb(0 0 0 / 0.08);
+    box-shadow: 0 2px 6px rgba(49, 119, 115, 0.25);
     padding: 1rem var(--spacing-section-horizontal);
   }
   nav {
@@ -113,8 +115,8 @@
   }
   .nav-links a:hover,
   .nav-links a:focus {
-    color: #2563eb;
-    border-bottom: 3px solid #2563eb;
+    color: var(--color-accent);
+    border-bottom: 3px solid var(--color-accent);
   }
 
   .hero {
@@ -135,13 +137,13 @@
   footer {
     margin-top: 4rem;
     padding: 2rem var(--spacing-section-horizontal);
-    background-color: #f3f4f6;
-    color: var(--color-text-secondary);
+    background-color: #e1f0ed;
+    color: var(--color-text-primary);
     font-size: 0.9rem;
     text-align: center;
   }
   footer a {
-    color: #2563eb;
+    color: var(--color-accent);
     text-decoration: none;
     font-weight: 600;
   }
@@ -169,6 +171,7 @@
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="privacy.html" aria-current="page">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
@@ -385,7 +388,7 @@
       <ul>
         <li><a href="https://gdpr-info.eu/" target="_blank" rel="noopener noreferrer">General Data Protection Regulation (GDPR) Info</a></li>
         <li><a href="https://oag.ca.gov/privacy/ccpa" target="_blank" rel="noopener noreferrer">California Consumer Privacy Act (CCPA)</a></li>
-        <li><a href="https://www.ftc.gov/tips-advice/business-center/privacy-and-security" target="_blank" rel="noopener noreferrer">U.S. Federal Trade Commission (FTC) Privacy & Security</a></li>
+        <li><a href="https://www.ftc.gov/tips-advice/business-center/privacy-and-security" target="_blank" rel="noopener noreferrer">U.S. Federal Trade Commission (FTC) Privacy &amp; Security</a></li>
       </ul>
     </div>
   </section>
@@ -398,3 +401,4 @@
 </footer>
 </body>
 </html>
+
